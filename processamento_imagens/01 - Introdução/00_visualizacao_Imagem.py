@@ -3,10 +3,9 @@ import cv2
 import numpy as np
 from matplotlib import pyplot as plt
 
-imagemNatureza = "NATUREZA_1.jpg"
+imageNature = "./assets/NATUREZA_1.jpg"
 
-image = cv2.imread(imagemNatureza)
-image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+image_rgb = cv2.cvtColor(cv2.imread(imageNature), cv2.COLOR_BGR2RGB)
 
 print("Dimensões da imagem: ", image_rgb.shape)
 print("Quantidade de linhas: ", image_rgb.shape[0])
